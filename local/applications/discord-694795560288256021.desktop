@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Game 694795560288256021
+Exec=bash -c "\\"/home/okama/.local/opt/edopro/app/EDOPro\\" -C \\"//home/okama/.local/opt/edopro/app/\\" -D" %u
+Type=Application
+NoDisplay=true
+Categories=Discord;Games;
+MimeType=x-scheme-handler/discord-694795560288256021;
