@@ -1,0 +1,67 @@
+[opener]
+# Edit files (default editor, VSCode on Windows)
+edit = [
+	{ run = 'vim "$@"', desc = "Default Editor", block = true, for = "unix" },
+	{ run = 'code %*',    orphan = true, desc = "VS Code",         for = "windows" },
+	{ run = 'code -w %*', block = true,  desc = "VS Code (block)", for = "windows" },
+]
+
+# Open with default system handler
+# open = [
+#    { run = 'xdg-open "$1"',                desc = "Open (System Default)", for = "linux" },
+#    { run = 'open "$@"',                    desc = "Open (System Default)", for = "macos" },
+#	 { run = 'start "" "%1"', orphan = true, desc = "Open (System Default)", for = "windows" },
+#	 { run = 'termux-open "$1"',             desc = "Open (System Default)", for = "android" },
+# ]
+
+# Reveal in file manager
+reveal = [
+	{ run = 'xdg-open "$(dirname "$1")"',           desc = "Reveal", for = "linux" },
+	{ run = 'open -R "$1"',                         desc = "Reveal", for = "macos" },
+	{ run = 'explorer /select,"%1"', orphan = true, desc = "Reveal", for = "windows" },
+	{ run = 'termux-open "$(dirname "$1")"',        desc = "Reveal", for = "android" },
+	{ run = '''clear; exiftool "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show EXIF", for = "unix" },
+]
+
+# Extract archives
+extract = [
+	{ run = 'ya pub extract --list "$@"', desc = "Extract here", for = "unix" },
+	{ run = 'ya pub extract --list %*',   desc = "Extract here", for = "windows" },
+]
+
+# Play media
+play = [
+	{ run = 'vlc "$@"', orphan = true, desc = "Play (vlc)", for = "unix" },
+	{ run = 'vlc %*', orphan = true,   desc = "Play (vlc)", for = "windows" },
+	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
+]
+
+# Open with specific apps depending on file type
+open_with = [
+	# Code files
+	{ run = 'vim "$@"', block = true, desc = "Vim", for = "unix" },
+	{ run = 'zeditor "$@"', orphan = true, desc = "Zed", for = "unix" },
+
+	# Text files
+	{ run = 'vim "$@"', orphan = true, desc = "Mousepad", for = "linux" },
+	{ run = 'code "$@"', orphan = true, desc = "Gedit", for = "linux" },
+
+	# PDFs
+	{ run = 'zathura "$@"', orphan = true, desc = "Zathura", for = "linux" },
+
+	# Images
+	{ run = 'imv "$@"', orphan = true, desc = "Image Viewer", for = "linux", for_file = "*.png;*.jpg;*.jpeg;*.gif;*.webp;*.bmp" },
+
+	# Videos
+	{ run = 'vlc "$@"', orphan = true, desc = "Celluloid", for = "linux", for_file = "*.mp4;*.mkv;*.webm;*.avi;*.mov" },
+
+	# Fallback system default
+	#{ run = 'xdg-open "$@"', orphan = true, desc = "System Default", for = "linux" },
+	#{ run = 'open "$@"', orphan = true, desc = "System Default", for = "macos" },
+	#{ run = 'start "" "%1"', orphan = true, desc = "System Default", for = "windows" },
+]
+
+[pick]
+open_title  = "Open with:"
+open_origin = "hovered"
+open_offset = [ 0, 1, 50, 7 ]

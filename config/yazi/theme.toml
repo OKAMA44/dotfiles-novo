@@ -1,0 +1,35 @@
+[flavor]
+dark = "catppuccin-mocha"
+
+[icon]
+prepend_rules = [
+  { name = "*", is = "dir", fg = "#f5c2e7" },
+
+]
+
+prepend_exts = [
+  { name = "zip", text="", fg = "#ff0000" },
+  { name = "rar", text="", fg = "#ff0000" },
+  { name = "7z", text="", fg = "#ff0000" },
+  { name = "xz", text="", fg = "#ff0000" },
+  { name = "gz", text="", fg = "#ff0000" },
+  { name = "mp3", text="󰝚" },
+  { name = "wav", text="󰝚" },
+
+]
+
+dirs  = [
+	{ name = ".config", text = "" },
+	{ name = "Garrafa", text = "󰡔" },
+	{ name = "Área de trabalho", text = "" },
+ 	{ name = "Projetos", text = "" },
+ 	{ name = "Documentos", text = "" },
+ 	{ name = "Downloads", text = "" },
+ 	{ name = "Modelos", text = "" },
+ 	{ name = "Músicas", text = "" },
+ 	{ name = "Imagens", text = "" },
+ 	{ name = "Público", text = "" },
+ 	{ name = "Vídeos", text = "" },
+	{ name = "Git", text = "" },
+	{ name = "Games", text = "󰺷" },
+ ]
