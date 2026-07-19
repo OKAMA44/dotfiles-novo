@@ -1,0 +1,30 @@
+﻿[Wait]
+Path=aero_busy kirby.ani
+
+[Arrow]
+Path=aero_cursor kirby.ani
+
+[Hand]
+Path=aero_link kirby.ani
+
+[No]
+Path=unavaiable stone kirby.cur
+
+[SizeNS]
+Path=vertical resize kirby.ani
+
+[AppStarting]
+Path=working_on_background kirby.ani
+
+[NWPen]
+Path=aero_pen kirby.ani
+
+[Help]
+Path=help_select kirby.ani
+
+[SizeWE]
+Path=horizontal_resize kirby.ani
+
+[IBeam]
+Path=text_select kirby.cur
+
