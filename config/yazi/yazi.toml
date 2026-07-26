@@ -7,12 +7,12 @@ edit = [
 ]
 
 # Open with default system handler
-# open = [
-#    { run = 'xdg-open "$1"',                desc = "Open (System Default)", for = "linux" },
-#    { run = 'open "$@"',                    desc = "Open (System Default)", for = "macos" },
-#	 { run = 'start "" "%1"', orphan = true, desc = "Open (System Default)", for = "windows" },
-#	 { run = 'termux-open "$1"',             desc = "Open (System Default)", for = "android" },
-# ]
+open = [
+   { run = 'xdg-open "$1"',                desc = "Open (System Default)", for = "linux" },
+   { run = 'open "$@"',                    desc = "Open (System Default)", for = "macos" },
+        { run = 'start "" "%1"', orphan = true, desc = "Open (System Default)", for = "windows" },
+        { run = 'termux-open "$1"',             desc = "Open (System Default)", for = "android" },
+]
 
 # Reveal in file manager
 reveal = [

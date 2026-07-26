@@ -14,7 +14,7 @@
 window#waybar {
     border-radius: 10px;
     background: transparent;
-    background-color: #1e1e2e;
+    background-color: #04041c;
 }
 
 window,
@@ -51,8 +51,8 @@ decoration {
     margin-bottom: 0px;
     border-radius: 10px;
     transition: none;
-    background: #1e1e2e;
-    color: #f5c2e7;
+    /*background: #1e1e2e;*/
+    color: #cdd6f4;
     border-bottom: 3px;
     transition: 0.3s;
 }
@@ -178,8 +178,7 @@ decoration {
     margin-bottom: 0px;
     border-radius: 10px;
     transition: none;
-    background: #1e1e2e;
-    color: #f5c2e7;
+    color: #cdd6f4;
     padding: 8px;
     border-bottom: 3px;
     border-color: #f5c2e7;
@@ -211,13 +210,12 @@ decoration {
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    padding-left: 12px;
-    padding-right: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-bottom: 0px;
     border-radius: 10px;
     transition: none;
-    background: #1e1e2e;
-    color: #f5c2e7;
+    color: #cdd6f4;
     border-bottom: 3px;
     border-color: #f5c2e7;
     transition: 0.3s;
@@ -239,8 +237,7 @@ decoration {
     margin-bottom: 0px;
     border-radius: 10px;
     transition: none;
-    background: #1e1e2e;
-    color: #f5c2e7;
+    color: #cdd6f4;
     border-bottom: 3px;
     border-color: #f5c2e7;
     transition: 0.3s;
@@ -314,8 +311,7 @@ decoration {
     margin-bottom: 0px;
     border-radius: 10px;
     transition: none;
-    background: #1e1e2e;
-    color: #f5c2e7;
+    color: #cdd6f4;
     border-bottom: 3px;
     border-color: #f5c2e7;
     transition: 0.3s;
@@ -334,12 +330,11 @@ decoration {
     margin-left: 2px;
     margin-right: 0px;
     padding-left: 10px;
-    padding-right: 0px;
+    padding-right: 10px;
     margin-bottom: 0px;
     border-radius: 10px;
     transition: none;
-    background: #1e1e2e;
-    color: #f5c2e7;
+    color: #cdd6f4;
     border-bottom: 3px;
     border-color: #f5c2e7;
     transition: 0.3s;
@@ -354,14 +349,14 @@ decoration {
 */
 
 #custom-launcher {
-    font-size: 20px;
+    font-size: 45px;
     margin-top: 10px;
     margin-left: 17px;
     padding-left: 10px;
     padding-right: 5px;
     border-radius: 10px;
     transition: none;
-    color: #f5c2e7;
+    color: #cdd6f4;
     background: #1e1e2e;
     transition: 0.3s;
     border-bottom: 3px;
@@ -373,8 +368,7 @@ decoration {
     color: #282839;
 }
 #network.disconnected {
-    color: #f5c2e7;
-    background: #1e1e2e;
+    color: #cdd6f4;
     border-color: #f38ba8;
 }
 #custom-power {
@@ -383,12 +377,11 @@ decoration {
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 14px;
-    padding-right: 2px;
+    padding-right: 4px;
     margin-bottom: 0px;
     border-radius: 10px;
     transition: none;
-    background: #1e1e2e;
-    color: #f5c2e7;
+    color: #cdd6f4;
     border-bottom: 3px;
     border-color: #f5c2e7;
     transition: 0.3s;
@@ -408,21 +401,20 @@ decoration {
     margin-right: 0px;
     padding-right: 0px;
     padding-left: 1px;
-    background: #1e1e2e;
     border-bottom: 3px;
-    border-color: #f5c2e7;
+    border-color: #cdd5f4;
     color: #f5c2e7;
     transition: 0.3s;
 }
 
 #workspaces button {
-    color: #f5c2e7;
+    color: #cdd6f4;
     transition: 0.3s;
     border-radius: 10px;
 }
 
 #workspaces button.active {
-    color: #f5c2e7;
+    color: #cdd6f4;
     transition: 0.3s;
 }
 
@@ -440,8 +432,7 @@ decoration {
     margin-bottom: 0px;
     border-radius: 10px;
     transition: none;
-    background: #1e1e2e;
-    color: #f5c2e7;
+    color: #04041c;
     border-bottom: 3px;
     border-color: #f5c2e7;
     transition: 0.3s;
@@ -455,20 +446,20 @@ decoration {
     margin-bottom: 0px;
     border-radius: 10px;
     transition: none;
-    background: #1e1e2e;
-    color: #f5c2e7;
+    color: #cdd6f4;
+    background-color: #04041c;
     border-bottom: 3px;
     border-color: #f5c2e7;
     transition: 0.3s;
 }
 
 #tray menu menuitem:hover {
-    background-color: #f5c2e7;
+    background-color: #cdd6f4;
 }
 
 #tray menu menuitem:hover label,
 #tray menu menuitem:hover * {
-    color: #1e1e2e;
+    color: #04041c;
 }
 
 #window {

@@ -8,7 +8,7 @@ set -U fish_color_autosuggestion bfbfbf
 sh /home/okama/.config/fish/pokemon.sh
 
 function fish_prompt
-    printf '  '
+    printf '  '
     printf (prompt_pwd) 
     printf ' > '
 end

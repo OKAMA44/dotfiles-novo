@@ -5,7 +5,7 @@
   "margin-left": 6,
   "border-radius": 10,
   "modules-left": ["custom/power", "hyprland/workspaces#pacman"],
-  "modules-center": ["cava"],
+  "modules-center": ["clock"],
   "modules-right": [
     "tray",
     "network",
@@ -13,7 +13,6 @@
     "disk",
     "memory",
     "cpu",
-    "clock",
   ],
 
   "hyprland/window": {
@@ -169,7 +168,7 @@
     "tooltip": false,
   },
   "custom/power": {
-    "format": " ",
+    "format": "<span font='15'></span> ",
     "tooltip": false,
     "on-click": "rofi -show drun",
     "on-click-right": "bash ~/.config/rofi/powermenu.sh",
@@ -177,7 +176,7 @@
 
   "clock": {
     "format": "{:%R}",
-    //"format-alt": "{:L%A, %d de %B de %Y, %R}",
+    //"format": "{:L%a., %d de %B de %Y, %R}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "month",
@@ -217,9 +216,10 @@
     "on-scroll-up": "hyprctl dispatch \"hl.dsp.focus({workspace = 'e+1'}\")",
     "on-scroll-down": "hyprctl dispatch \"hl.dsp.focus({workspace = 'e-1'}\")",
     //"on-click": "activate",
+    "tooltip": false,
     "show-special": false,
     "persistent-workspaces": {
-      "*": 6,
+      "*": 4,
     },
     "format": "{icon}",
     "format-icons": {
