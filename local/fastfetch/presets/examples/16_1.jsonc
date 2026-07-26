@@ -49,7 +49,21 @@
             "key": "║ {#32} shell   {#keys}║",
             "type": "shell"
         },
-                
+        {
+            "key": "║ {#33} cpu     {#keys}║",
+            "type": "cpu",
+            "showPeCoreCount": true
+        },
+        {
+            "key": "║ {#34} disk    {#keys}║",
+            "type": "disk",
+            "folders": "/"
+        },
+        {
+            "key": "║ {#35} memory  {#keys}║",
+            "type": "memory"
+        },
+        
         {
             "key": "╠═══════════╣",
             "type": "custom"
